@@ -19822,11 +19822,11 @@ cr.behaviors.scrollto = function(runtime)
 	behaviorProto.acts = new Acts();
 }());
 cr.getObjectRefTable = function () { return [
-	cr.plugins_.Browser,
-	cr.plugins_.Dictionary,
 	cr.plugins_.Touch,
 	cr.plugins_.Sprite,
 	cr.plugins_.Text,
+	cr.plugins_.Browser,
+	cr.plugins_.Dictionary,
 	cr.behaviors.scrollto,
 	cr.behaviors.DragnDrop,
 	cr.system_object.prototype.cnds.OnLayoutStart,
@@ -19834,17 +19834,21 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Text.prototype.acts.SetText,
 	cr.plugins_.Dictionary.prototype.exps.Get,
 	cr.plugins_.Touch.prototype.cnds.OnTapGestureObject,
-	cr.system_object.prototype.cnds.Compare,
 	cr.system_object.prototype.acts.SetVar,
 	cr.system_object.prototype.acts.GoToLayout,
-	cr.plugins_.Touch.prototype.cnds.IsInTouch,
-	cr.system_object.prototype.acts.Wait,
-	cr.plugins_.Sprite.prototype.acts.SetPos,
+	cr.plugins_.Touch.prototype.cnds.OnTouchStart,
 	cr.plugins_.Touch.prototype.exps.Y,
+	cr.plugins_.Sprite.prototype.exps.Y,
+	cr.plugins_.Touch.prototype.cnds.IsInTouch,
+	cr.plugins_.Sprite.prototype.acts.SetY,
+	cr.plugins_.Sprite.prototype.cnds.CompareY,
 	cr.plugins_.Touch.prototype.cnds.OnTouchEnd,
+	cr.system_object.prototype.acts.Wait,
 	cr.plugins_.Touch.prototype.cnds.IsTouchingObject,
+	cr.plugins_.Browser.prototype.acts.GoToURL,
 	cr.system_object.prototype.cnds.IsGroupActive,
 	cr.system_object.prototype.cnds.CompareVar,
+	cr.plugins_.Sprite.prototype.acts.SetPos,
 	cr.plugins_.Sprite.prototype.cnds.CompareFrame,
 	cr.system_object.prototype.cnds.TriggerOnce,
 	cr.plugins_.Sprite.prototype.acts.SubInstanceVar,
@@ -19853,7 +19857,6 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.acts.SetAnimFrame,
 	cr.plugins_.Sprite.prototype.cnds.CompareInstanceVar,
 	cr.plugins_.Sprite.prototype.acts.SetInstanceVar,
-	cr.system_object.prototype.cnds.Else,
-	cr.plugins_.Browser.prototype.acts.GoToURL
+	cr.system_object.prototype.cnds.Else
 ];};
 

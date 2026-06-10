@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1781062827,
+	"version": 1781099283,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -28,6 +28,10 @@
 		"images/whatsapplogo-sheet0.png",
 		"images/produto3-sheet0.png",
 		"images/btn_produto3-sheet0.png",
+		"images/btn_produto4-sheet0.png",
+		"images/produto4-sheet0.png",
+		"images/produto4-sheet1.png",
+		"images/produto4-sheet2.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
