@@ -19836,7 +19836,7 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.acts.SetVar,
 	cr.system_object.prototype.acts.GoToLayout,
 	cr.plugins_.Touch.prototype.cnds.OnTouchStart,
-	cr.plugins_.Touch.prototype.exps.Y,
+	cr.plugins_.Touch.prototype.exps.AbsoluteY,
 	cr.plugins_.Sprite.prototype.exps.Y,
 	cr.plugins_.Touch.prototype.cnds.IsInTouch,
 	cr.plugins_.Sprite.prototype.acts.SetY,
